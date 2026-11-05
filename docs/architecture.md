@@ -16,7 +16,7 @@
 | Web app | Log in, check ownership, save goals and tasks, calculate progress and risk | Show data to anyone but its owner (N2); send email except through the hourly check or confirmation flow |
 | Database | Keep the things in `data-model.md` | Be reachable without the web app's checks |
 | Scheduler | Wake the hourly check once an hour | Contain any logic of its own |
-| Hourly check | Find learners past 48 hours with no completed task and no email record for that period, send emails, write email records | Email a pending or stopped chosen person (N1, N7); send twice for one day (N5) |
+| Hourly check | Find learners past 48 hours with no completed task and no email record for that period, send emails, write email records | Email a pending or stopped chosen person (N1, N7); send twice for one 48-hour period (N5) |
 | Email service | Deliver what it is handed | Decide who gets what |
 | AI service | Suggest a next step | Be required: the dashboard must work with it down (R12); receive names or emails (N9) |
 

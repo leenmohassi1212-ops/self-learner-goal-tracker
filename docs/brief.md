@@ -7,11 +7,11 @@ Why current tools fail
 The tools carry no consequence, so learners ignore them.
 • Apps (to-do lists, focus timers, phone blockers): learners ignore the reminders or switch the blockers off.
 • Studying with friends: friends are too busy to meet daily or weekly, and nobody keeps anyone accountable.
-The consequence that would work: seeing the risk of failing the exam or missing the deadline, and someone the learner chose finding out when they slack.
+The consequence most likely to work, though still unproven (see research.md): seeing the risk of failing the exam or missing the deadline, and someone the learner chose finding out when they slack.
 What success means
 A learner succeeds when they reach the goal they set at the start, by its deadline, and always know their next step.
 The app: how it works
-A web app for mobile and desktop browsers that turns a goal into daily tasks and warns the learner, and a person they chose, when they slip.
+A web app for mobile and desktop browsers that helps the learner turn a goal into daily tasks and warns the learner, and a person they chose, when they slip.
 1. The learner sets a goal: an exam date (AWS) or their own target and deadline (finish a React course in four weeks).
 2. They break it into small tasks, each one finishable in a day (a lesson or chapter).
 3. They mark tasks done (self-reported in version 1).

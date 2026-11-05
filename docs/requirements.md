@@ -8,7 +8,7 @@ R1 A learner can sign up and log in with an email and password. `[ASSUMED A9]`
    Done when: a new learner can sign up, log out, and log back in to the same goal; a wrong password is refused.
 
 R2 A learner can set one active goal: a target, a type (exam or self-set), and a deadline. `[ASSUMED A2]`
-   The goal starts on the day the chosen person confirms (R8). That day is its start date. `[ASSUMED A17]`
+   The goal starts on the day the chosen person confirms (R8). That moment starts both the plan and the 48-hour clock. `[ASSUMED A17]`
    Done when: "AWS exam on a set date" and "finish a React course in four weeks" can both be saved; a second active goal is refused.
 
 R3 A learner can break the goal into small ordered tasks, such as a lesson or a chapter.
@@ -16,7 +16,7 @@ R3 A learner can break the goal into small ordered tasks, such as a lesson or a 
    Done when: tasks can be added, edited and reordered, and the order is still there after logging back in; deleting a task after the goal starts is refused.
 
 R4 A learner can mark a task done, self-reported.
-   Done when: ticking a task records today's date and progress changes at once; unticking clears it.
+   Done when: ticking a task records the exact time and progress changes at once; unticking clears it.
 
 R5 The app compares planned progress with actual progress against the deadline. Planned progress is a straight line from the goal's start date to its deadline. `[ASSUMED A3]`
    Done when: for 10 tasks over 20 days, on day 10 with 3 done, it shows planned 5, actual 3, behind by 2.
@@ -60,7 +60,7 @@ N3 Never present the risk level as a true prediction of passing or failing.
    Done when: the word "estimate" appears next to the risk level everywhere it is shown, including emails.
 
 N4 Never let a learner backdate a completed task to avoid an email. `[ASSUMED A5]`
-   Done when: the app has no way to enter a completion date; it is always the day of the tick.
+   Done when: the app has no way to enter a completion time; it is always the moment of the tick.
 
 N5 Never send the same person two warning emails about the same goal and the same 48-hour period.
    Done when: running the hourly check twice in a row sends each email once.

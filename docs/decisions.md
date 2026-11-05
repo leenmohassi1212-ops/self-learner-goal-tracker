@@ -8,7 +8,7 @@ The interview was cut short. The task was due in 40 minutes, so the model asked 
 
 - **Stack: plain JavaScript and Node.** Killed the model's Next.js and Vercel recommendation, because it meant learning more new things.
 - **The goal can't start until the chosen person confirms (was A8).** The model's draft let the goal run without them. Rejected, because a learner could avoid accountability by never getting a confirmation. The accepted cost is that a busy friend can delay the start.
-- **Block dodging (was A16, A18).** No deleting tasks and no ending a goal early once it has started. The draft allowed both, and the model recommended telling the chosen person instead. Chosen the stricter way. The accepted cost is that a learner whose plans change is stuck until the deadline.
+- **Block dodging (was A18, and an earlier version of A16 that let learners end a goal).** No deleting tasks and no ending a goal early once it has started. The draft allowed both, and the model recommended telling the chosen person instead. Chosen the stricter way. The accepted cost is that a learner whose plans change is stuck until the deadline.
 - **Warning emails go out after 48 hours with no task completed (was A1).** This reverses the earlier decision to email on any no-task day. The model's draft was 8 AM the next morning. The accepted cost is that a learner who ticks one task every 47 hours never triggers an email.
 
 ## 2026-11-05: assumed by the model, not yet confirmed
@@ -37,6 +37,7 @@ The model filled these gaps. For each one: confirm it, change it, then remove it
 | A21 | Deadline can't be moved after the goal starts | N11 | Same dodge as deleting tasks; not covered by the review decision |
 | A22 | Another email goes out every further 48 hours with no task completed | R9 | The alternative is one email only, which a learner could then ignore |
 | A23 | The working routine | `workflow.md` | Written by the model during Task 03, not recorded from what you actually do |
+| A24 | A 48-hour period is a block counted from the last tick or the goal's start | `data-model.md`, N5 | The duplicate-email check depends on this definition |
 
 ## 2026-11-05: research.md and workflow.md written late
 
@@ -52,7 +53,23 @@ A model with no project context read the folder and caught these errors in the f
 - No requirement ended a goal, the start date was never collected, and neither were timezone or names. Now covered by R13, A17 and A19.
 - Deleting tasks could erase delay. Solved by the decision to block deleting after the start.
 
-Still open: `brief.md` says the app "turns a goal into daily tasks", then says the learner breaks it down. The requirements follow the second reading: the learner does it.
+`brief.md` said the app "turns a goal into daily tasks", then said the learner breaks it down. It now says the app helps the learner do it, which matches the requirements.
+
+## 2026-11-05: open questions from the fresh-chat test
+
+The test understood what we're building, for whom, and what we're not building. These are the questions it would still ask. Settle them before writing code.
+
+1. **Unticking:** how does it affect the 48-hour clock, and can the last task be unticked after the goal is complete?
+2. **Zero tasks:** can a goal start with no tasks?
+3. **Planned progress:** is the start day 0 or 1, and how do fractions round?
+4. **Goal ends:** does the deadline end at midnight? What if it passes before anyone confirms? Can a waiting goal be abandoned? What does the dashboard show afterwards? Does the chosen person hear how it ended?
+5. **More dodges:** a learner can name a second address of their own, replace the chosen person mid-goal with someone who never confirms, or set a very distant deadline.
+6. **Accounts:** is there a password reset, and a check on the learner's own email address?
+7. **Live demo:** a 48-hour warning can't happen during a demo, so how do we show it? `rules.md` also bans emailing real people from tests, so which addresses are safe?
+8. **AI next step:** can a suggestion become a task, or is it only text?
+9. **3 AM emails:** is it acceptable for warnings to reach the chosen person at night? No decision covers this yet.
+10. **Libraries:** does `rules.md` approve password hashing, a database client and a test tool?
+11. **Order of work:** should the learner interviews and the Gmail delivery test happen before any code?
 
 ## Before 2026-11-05: chosen (from `brief.md` and `scope.md`)
 

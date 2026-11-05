@@ -34,3 +34,5 @@ Free limits change. `research.md` has what a quick search found, mostly from thi
 - **Biggest open risk:** does Brevo deliver to Gmail and Outlook from a single verified Gmail address without landing in spam? Test this first. If it fails, the warning emails, and so the whole consequence, fail with it.
 - Not checked yet: does GitHub Actions run close enough to on time? Scheduled runs can start late.
 - Not checked yet: are the Gemini and Groq free tiers still available?
+- Not checked yet: does Render's free tier block outgoing SMTP? If so, call Brevo through its web API.
+- Not checked yet: does GitHub switch off scheduled runs after about 60 days without repo activity? That is close to the eight-week project.
