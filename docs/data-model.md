@@ -6,7 +6,7 @@ No schema here, only what the app knows about.
 Email, protected password, name, timezone, career note (optional, only used for the AI suggestion).
 
 ## Goal
-Target, type (exam or self-set), start date, deadline, status (active, completed, or ended), picked next step (optional, points to one Task).
+Target, type (exam or self-set), start date (empty until the chosen person confirms), deadline, status (waiting, active, completed, or ended), picked next step (optional, points to one Task).
 
 ## Task
 Title, position in the order, date completed (empty until ticked).

@@ -7,12 +7,13 @@ For any model writing code in this repo. `[ASSUMED A12: naming, structure, comme
 ## Naming
 
 - Use the words from `data-model.md` in code: learner, goal, task, chosen person. Not user, friend, or buddy.
-- Variables and functions in camelCase; components in PascalCase; files in kebab-case.
+- Variables and functions in camelCase; files in kebab-case.
 - Names say what something is. No `data`, `temp`, or `helper`.
 
 ## File structure
 
-- One folder for each screen in `screens.md`. No extra screens.
+- One HTML page for each screen in `screens.md`. No extra screens.
+- Plain JavaScript in the browser and Node on the server. No front-end framework.
 - Calculation of progress and risk lives in one place, used by both the dashboard and the emails.
 - Email wording lives in one place.
 - Secret keys live in environment settings, never in the repo.

@@ -30,4 +30,7 @@ Learners live in different timezones, so "8 AM" arrives at different moments. `[
 - **Day boundaries.** A tick at 11:59 PM and at 12:01 AM count for different days, and "day" means the learner's timezone, not the server's.
 - **Emails landing in spam.** With no paid domain, warnings may never be seen. "Ignored" and "never arrived" look the same to the app. Test with Gmail and Outlook early.
 - **Free-tier limits.** A free service can sleep or pause. If this happens on the final night, the demo fails. See `stack.md`.
+- **Login built by hand.** With no login service, password protection, sessions and the N2 ownership check are all on us. A mistake here exposes people's data.
+- **A chosen person who never confirms.** The goal can't start until they do, so a busy friend blocks the learner completely. The only way out is naming someone else.
+- **No undo after the start.** Tasks can't be deleted and the goal can't be ended early, so a learner whose plans really change is stuck until the deadline. This is deliberate, and it may feel harsh.
 - **Self-reporting.** The app can't tell if a task was really done or really fit in one day. A learner can tick everything to silence the emails. Version 1 accepts this.
