@@ -15,7 +15,7 @@ Title, position in the order, exact time completed (empty until ticked). The 48-
 Name, email, status (pending, confirmed, or stopped), private link value for the confirm and stop links.
 
 ## Email record
-Recipient (learner or chosen person), goal, the 48-hour period it is about (counted in 48-hour blocks from the last tick or the goal's start `[ASSUMED A24]`, or that it is the missed-deadline email), the time it was sent.
+Recipient (learner or chosen person), goal, the 48-hour period it is about (counted in 48-hour blocks from the last tick or the goal's start, or that it is the missed-deadline email), the time it was sent.
 
 This exists to enforce N5. Before sending, the hourly check looks for a record with the same recipient, goal and period. Someone chosen by two learners still gets both emails.
 
@@ -24,13 +24,13 @@ Kept in the database by the session library (`stack.md`), so a learner stays log
 
 ## How they relate
 
-- A learner has many goals over time, but only one active goal. `[ASSUMED A2]`
+- A learner has many goals over time, but only one active goal.
 - A goal belongs to one learner and has many tasks.
 - A goal has at most one current chosen person. Replacing them starts a new pending one. After the goal starts, only someone who stopped can be replaced.
 - A goal has many email records.
 
 ## Deliberately not stored
 
-- Risk level, delay, and planned progress. They are calculated from the deadline, start time and tasks each time, so they can't go out of date. `[ASSUMED A3]`
+- Risk level, delay, and planned progress. They are calculated from the deadline, start time and tasks each time, so they can't go out of date.
 - Whether an email was read. Scope ruled this out as unreliable.
-- AI suggestions. Generated when asked for, then thrown away. `[ASSUMED A15]`
+- AI suggestions. Generated when asked for, then thrown away.

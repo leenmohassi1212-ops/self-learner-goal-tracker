@@ -1,6 +1,6 @@
 # Workflow
 
-How this project is built with an AI model. `[ASSUMED A23: drafted by the model during Task 03, from promot-log.md and how Task 03 went. Correct anything that doesn't match how you really work.]`
+How this project is built with an AI model.
 
 ## Starting a chat
 

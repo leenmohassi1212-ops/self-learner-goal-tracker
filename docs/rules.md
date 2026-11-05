@@ -1,6 +1,6 @@
 # Rules
 
-For any model writing code in this repo. `[ASSUMED A12: naming, structure, comments and errors are the model's draft]`
+For any model writing code in this repo.
 
 **If something is unclear, ask me instead of making assumptions.** (Session One line, from `promot-log.md` V1.)
 

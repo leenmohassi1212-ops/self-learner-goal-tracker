@@ -17,4 +17,4 @@ A web app for self-learners who keep postponing a market skill such as an AWS ce
                  proplems.md       the candidate problems
                  promot-log.md     the prompts used in planning
 
-Lines tagged `[ASSUMED An]` are unconfirmed. They are listed in `decisions.md`.
+Assumptions in the first draft were settled in review on 2026-11-05. They are listed in `decisions.md`.

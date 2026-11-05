@@ -1,6 +1,6 @@
 # Stack
 
-Decided: plain JavaScript and a small Node server, because it means fewer new things to learn. `[ASSUMED A10]` The specific services below are the model's picks to fit that decision and are not yet confirmed. Rows marked Decided are settled.
+Decided: plain JavaScript and a small Node server, because it means fewer new things to learn. The services below were the model's picks to fit that decision. They are confirmed, subject to the checks at the end of this file. If a check fails, swap only that service and record it in `decisions.md`.
 
 | Piece | Tool | Honest reason |
 |---|---|---|

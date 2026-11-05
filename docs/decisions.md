@@ -31,32 +31,30 @@ The interview was cut short. The task was due in 40 minutes, so the model asked 
 - **Cut order: AI next step, the learner's own next-step pick, task reordering, the missed-deadline email.** These are furthest from the 48-hour warning. Password reset stays, because a lockout is the worst dead end. The accepted cost is that a tight finish loses the final email on the biggest failure.
 - **Working date for the final night: about 2026-12-31.** This counts eight weeks from today. Check it against the real course date, because the first docs are from mid-October.
 
-## 2026-11-05: assumed by the model, not yet confirmed
+## 2026-11-05: assumptions confirmed in review
 
-The model filled these gaps. For each one: confirm it, change it, then remove its tag from the file. A1, A8, A13 and A18 are decided above and no longer appear in the files.
+Every remaining assumption was confirmed as drafted, so no `[ASSUMED]` tags are left in the files.
 
-| ID | Assumption | Where | Why it matters |
-|---|---|---|---|
-| A2 | One active goal per learner | R2 | Keeps one dashboard screen and one simple no-task rule |
-| A3 | Planned progress is a straight line from start to deadline; tasks have no planned dates | R5 | Ignores that some weeks are busier |
-| A4 | Risk cut-offs: 0 behind, under 20%, 20% or more | R6 | The numbers have no evidence behind them |
-| A5 | No backdating | N4 | Forgetting to tick yesterday still triggers the email |
-| A6 | Chosen person sees only learner's name, goal name, time since the last task and risk | N6 | Privacy vs. how embarrassing the consequence feels |
-| A7 | Chosen person can stop emails with a link | N7 | Consent, but it removes the consequence if used |
-| A9 | Login with email and password | R1, N8 | Google login is the alternative |
-| A10 | Express, Render, Supabase, Brevo and GitHub Actions, to fit plain JS and Node | `stack.md` | Picked from memory; free limits not checked |
-| A11 | The 48-hour clock runs until the deadline, and stops when all tasks are done | R9 | Decides when the emails finally stop |
-| A12 | Code conventions | `rules.md` | Naming, structure, comments and errors |
-| A14 | Five screens | `screens.md` | Session Four designs exactly these |
-| A15 | AI gets goal, tasks and career note only; suggestions aren't saved | N9 | Privacy vs. suggestion quality |
-| A16 | If the deadline passes with tasks left, the goal ends by itself | R13 | Without this, a learner who misses a deadline could never start a new goal |
-| A17 | Start date is the day the chosen person confirms | R2 | A slow confirmation shortens the time until the deadline |
-| A19 | Name asked at sign-up; timezone read from the browser | S1 | Used for the deadline and completion dates, no longer for email timing |
-| A20 | Learner can write tasks while waiting, but not tick them | R8 | Work done before the confirmation isn't counted |
-| A21 | Deadline can't be moved after the goal starts | N11 | Same dodge as deleting tasks; not covered by the review decision |
-| A22 | Another email goes out every further 48 hours with no task completed | R9 | The alternative is one email only, which a learner could then ignore |
-| A23 | The working routine | `workflow.md` | Written by the model during Task 03, not recorded from what you actually do |
-| A24 | A 48-hour period is a block counted from the last tick or the goal's start | `data-model.md`, N5 | The duplicate-email check depends on this definition |
+- **A4:** risk cut-offs are 0 behind, under 20%, and 20% or more. The number still has no evidence, so revisit it after the interviews.
+- **A6:** the chosen person sees only what N6 lists, with no task names.
+- **A7:** the chosen person can stop emails with a link, and the learner sees that on the dashboard. The accepted cost is that using it removes the consequence until a replacement confirms.
+- **A22:** another email goes out every further 48 hours with no task completed. The accepted cost is that a tired friend may click stop.
+- **A2:** one active or waiting goal per learner. Several goals could come in a later version.
+- **A3:** planned progress is a straight line, and tasks have no planned dates. The accepted cost is that a planned busy week shows as falling behind.
+- **A5:** no backdating. The accepted cost is an occasional unfair email when a learner forgets to tick.
+- **A21:** the deadline never moves after the start. The accepted cost is that a real exam reschedule leaves the risk level wrong until the old date.
+- **A11:** the 48-hour clock runs until the deadline, and stops when all tasks are done.
+- **A16:** if the deadline passes with tasks left, the goal ends by itself. The accepted cost is that unfinished tasks do not carry over to a new goal.
+- **A17:** the goal starts when the chosen person confirms. The accepted cost is that a slow confirmation shortens the time until the deadline.
+- **A20:** the learner can write tasks while waiting, but not tick them. The accepted cost is that work done before the confirmation is not counted.
+- **A9:** login is by email and password. The accepted cost is that protecting passwords is on us (N8).
+- **A10:** Express, Render, Supabase, Brevo and GitHub Actions, subject to the checks in `stack.md`.
+- **A15:** the AI gets the goal, remaining tasks and career note only, and suggestions are not saved. The accepted cost is that it can repeat itself.
+- **A19:** sign-up asks for the name, and the timezone is read from the browser once. The accepted cost is that a move abroad shifts when the deadline passes.
+- **A12:** the code conventions in `rules.md`.
+- **A14:** five screens, and Session Four designs exactly these.
+- **A23:** the working routine in `workflow.md` matches how the project owner works.
+- **A24:** a 48-hour period is a block counted from the last tick or the goal's start. After an outage, only the latest block gets an email, so nobody gets a run of old warnings. The email states the real time since the last task.
 
 ## 2026-11-05: research.md and workflow.md written late
 
