@@ -30,6 +30,7 @@ Each learner's 48 hours run out at a different moment, depending on when they la
 - **The 48-hour loophole.** A learner who ticks one task every 47 hours never triggers an email, so they can work every other day and nobody finds out. The risk level on the dashboard still shows the delay, but no email does. This is an accepted cost of the 48-hour rule.
 - **Emails at odd hours.** Because the clock starts at the last tick, a warning can reach the chosen person at 3 AM.
 - **Emails landing in spam.** With no paid domain, warnings may never be seen. "Ignored" and "never arrived" look the same to the app. Test with Gmail and Outlook early.
+- **The consequence may not work.** Research on people finding out about a commitment is mixed, and one study found worse results (`research.md`). The app can be built perfectly and still not change behaviour.
 - **Free-tier limits.** A free service can sleep or pause. If this happens on the final night, the demo fails. See `stack.md`.
 - **Login built by hand.** With no login service, password protection, sessions and the N2 ownership check are all on us. A mistake here exposes people's data.
 - **A chosen person who never confirms.** The goal can't start until they do, so a busy friend blocks the learner completely. The only way out is naming someone else.

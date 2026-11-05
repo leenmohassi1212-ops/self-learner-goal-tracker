@@ -27,10 +27,10 @@ Decided: plain JavaScript and a small Node server, because it means fewer new th
 
 ## Check in the first week
 
-Free limits change, and these were written from the model's memory, not checked against the current pricing pages. Before relying on them:
+Free limits change. `research.md` has what a quick search found, mostly from third parties, so confirm against each provider's own pages.
 
-- Does Render's free tier sleep when idle? If so, the first visit is slow, so open it before the final night.
-- Does Supabase's free tier pause after inactivity? If so, the same applies.
-- Does Brevo really deliver to Gmail from a single verified address, without landing in spam?
-- Does GitHub Actions run close enough to on time? Scheduled runs can start late.
-- Are the Gemini and Groq free tiers still available?
+- Render's free tier reportedly sleeps after 15 minutes idle, so open the app a few minutes before the final-night demo.
+- Supabase's free tier reportedly pauses after about 7 days idle. The hourly check should keep it active.
+- **Biggest open risk:** does Brevo deliver to Gmail and Outlook from a single verified Gmail address without landing in spam? Test this first. If it fails, the warning emails, and so the whole consequence, fail with it.
+- Not checked yet: does GitHub Actions run close enough to on time? Scheduled runs can start late.
+- Not checked yet: are the Gemini and Groq free tiers still available?

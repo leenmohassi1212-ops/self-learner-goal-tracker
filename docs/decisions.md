@@ -36,6 +36,11 @@ The model filled these gaps. For each one: confirm it, change it, then remove it
 | A20 | Learner can write tasks while waiting, but not tick them | R8 | Work done before the confirmation isn't counted |
 | A21 | Deadline can't be moved after the goal starts | N11 | Same dodge as deleting tasks; not covered by the review decision |
 | A22 | Another email goes out every further 48 hours with no task completed | R9 | The alternative is one email only, which a learner could then ignore |
+| A23 | The working routine | `workflow.md` | Written by the model during Task 03, not recorded from what you actually do |
+
+## 2026-11-05: research.md and workflow.md written late
+
+Neither Task 02 file was in the repo or found on the computer, so the model wrote both during Task 03. `research.md` found that evidence for social accountability is mixed, and one study found worse results. The idea stays, but the app can't promise that the consequence works. No learners have been interviewed yet.
 
 ## 2026-11-05: found by a rehearsal of the fresh-chat test
 

@@ -76,6 +76,8 @@ Start with [`docs/plan.md`](docs/plan.md), which lists every file in reading ord
 |---|---|
 | [`docs/plan.md`](docs/plan.md) | The index: start here |
 | [`docs/brief.md`](docs/brief.md) | Project brief: problem, audience, and how the app works |
+| [`docs/research.md`](docs/research.md) | Evidence for the problem, and where it is weak |
+| [`docs/workflow.md`](docs/workflow.md) | How the project is built with an AI model |
 | [`docs/requirements.md`](docs/requirements.md) | What the app must do and never do, with tests |
 | [`docs/screens.md`](docs/screens.md) | The five screens |
 | [`docs/data-model.md`](docs/data-model.md) | What the app stores |
