@@ -70,9 +70,20 @@ A learner succeeds when they reach the goal they set at the start, by its deadli
 
 ## Documentation
 
+Start with [`docs/plan.md`](docs/plan.md), which lists every file in reading order.
+
 | File | Contents |
 |---|---|
+| [`docs/plan.md`](docs/plan.md) | The index: start here |
 | [`docs/brief.md`](docs/brief.md) | Project brief: problem, audience, and how the app works |
+| [`docs/requirements.md`](docs/requirements.md) | What the app must do and never do, with tests |
+| [`docs/screens.md`](docs/screens.md) | The five screens |
+| [`docs/data-model.md`](docs/data-model.md) | What the app stores |
+| [`docs/architecture.md`](docs/architecture.md) | The pieces, and what will be hard |
+| [`docs/stack.md`](docs/stack.md) | Tools chosen and rejected |
+| [`docs/rules.md`](docs/rules.md) | How code must be written |
+| [`docs/decisions.md`](docs/decisions.md) | What was chosen, killed and assumed |
+| [`docs/progress.md`](docs/progress.md) | Current status |
 | [`docs/scope.md`](docs/scope.md) | What's in and out of version 1 |
 | [`docs/proplems.md`](docs/proplems.md) | Candidate problems the project addresses |
 | [`docs/promot-log.md`](docs/promot-log.md) | Prompt log from the planning process |
