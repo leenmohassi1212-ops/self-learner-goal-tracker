@@ -18,5 +18,5 @@ A web app for mobile and desktop browsers that turns a goal into daily tasks and
 4. The app compares planned progress with actual progress against the deadline.
 5. It shows where the delay is and the risk of missing the goal.
 6. It shows the next step: the next unticked task, the learner's own choice, or an AI suggestion based on their career and plans.
-7. Any day with no task completed, it emails the learner and their chosen person. That person confirms by email before receiving anything.
+7. After 48 hours with no task completed, it emails the learner and their chosen person. That person confirms by email before receiving anything.
 The risk figure is an estimate from progress against plan, not a true prediction of passing.

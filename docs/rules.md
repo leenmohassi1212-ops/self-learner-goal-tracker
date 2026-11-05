@@ -28,12 +28,12 @@ For any model writing code in this repo. `[ASSUMED A12: naming, structure, comme
 - Show the learner a plain sentence saying what failed and what to do next. Never a raw error.
 - If AI fails, fall back to the next unticked task (R12).
 - If an email fails, log it, write no email record, and let the next hourly run retry.
-- A failure for one learner must not stop the daily check for the others.
+- A failure for one learner must not stop the hourly check for the others.
 
 ## Testing
 
 - Every "Done when" in `requirements.md` is what gets tested.
-- Risk, day boundaries and the daily check get tests first, because mistakes there are invisible.
+- Risk, the 48-hour clock and the hourly check get tests first, because mistakes there are invisible.
 
 ## Never
 

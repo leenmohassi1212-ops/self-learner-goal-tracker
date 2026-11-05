@@ -7,7 +7,7 @@
 | 3 | Small tasks, finishable in a day, marked done (self-reported) | In scope |
 | 4 | Plan vs actual progress against the deadline | In scope |
 | 5 | Risk warning and delay display | In scope |
-| 6 | Daily email on any day with no task completed, to the learner and their chosen person | In scope |
+| 6 | Email after 48 hours with no task completed, to the learner and their chosen person | In scope |
 | 7 | Chosen person confirms by email first | In scope |
 | 8 | One-screen dashboard | In scope |
 | 9 | Live hosting for the final night | In scope |
@@ -25,6 +25,6 @@
 | 6 | Automatic course-progress tracking | Future version |
 | 7 | School and university students | Self-learners first |
 | 8 | True "probability of failing" | Needs many learners' data; estimate only |
-| 9 | Detecting if the warning email was read | Not reliable; "ignored" means no task that day |
-| 10 | Waiting before escalating, behind-plan-only trigger, rest days | You chose: email both on any no-task day |
+| 9 | Detecting if the warning email was read | Not reliable; "ignored" means still no task 48 hours later |
+| 10 | Behind-plan-only trigger, rest days | You chose: email both after 48 hours with no task completed |
 | 11 | Full analytics dashboard | Reduced to one screen |

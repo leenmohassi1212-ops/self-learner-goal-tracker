@@ -15,9 +15,9 @@ Title, position in the order, date completed (empty until ticked).
 Name, email, status (pending, confirmed, or stopped), private link value for the confirm and stop links.
 
 ## Email record
-Recipient (learner or chosen person), goal, the day it is about, the time it was sent.
+Recipient (learner or chosen person), goal, the 48-hour period it is about, the time it was sent.
 
-This exists to enforce N5. Before sending, the daily check looks for a record with the same recipient, goal and day. Someone chosen by two learners still gets both emails.
+This exists to enforce N5. Before sending, the hourly check looks for a record with the same recipient, goal and period. Someone chosen by two learners still gets both emails.
 
 ## How they relate
 

@@ -23,7 +23,7 @@ The consequences that do work are seeing the real risk of missing the deadline, 
 4. **Compare plan vs. actual:** the app tracks planned progress against actual progress toward the deadline.
 5. **See the risk:** it shows where the delay is and the risk of missing the goal.
 6. **Know the next step:** the next unticked task, the learner's own choice, or an AI suggestion based on their career plans.
-7. **Accountability emails:** on any day with no task completed, the app emails both the learner and their chosen person. That person must confirm by email before they receive anything.
+7. **Accountability emails:** after 48 hours with no task completed, the app emails both the learner and their chosen person. That person must confirm by email before they receive anything.
 
 > The risk figure is an estimate based on progress against the plan. It doesn't predict whether the learner will pass.
 
@@ -44,7 +44,7 @@ A learner succeeds when they reach the goal they set at the start, by its deadli
 | 3 | Small daily tasks, marked done (self-reported) | In scope |
 | 4 | Plan vs. actual progress against the deadline | In scope |
 | 5 | Risk warning and delay display | In scope |
-| 6 | Daily email on no-task days, to the learner and their chosen person | In scope |
+| 6 | Email after 48 hours with no task completed, to the learner and their chosen person | In scope |
 | 7 | Chosen person confirms by email first | In scope |
 | 8 | One-screen dashboard | In scope |
 | 9 | Live hosting for the final demo | In scope |
@@ -59,7 +59,7 @@ A learner succeeds when they reach the goal they set at the start, by its deadli
 | Browser push notifications | iPhone requires home-screen install; email only |
 | Automatic course-progress tracking | Planned for a future version |
 | True "probability of failing" | Needs data from many learners; estimate only |
-| Detecting whether warning emails were read | Unreliable; "ignored" means no task completed that day |
+| Detecting whether warning emails were read | Unreliable; "ignored" means still no task completed 48 hours later |
 | Full analytics dashboard | Reduced to one screen |
 
 ## Constraints

@@ -31,9 +31,9 @@ R7 The app always shows a next step: the next unticked task, unless the learner 
 R8 A learner names a chosen person by email, who must confirm by email before receiving anything. The goal cannot start until they confirm. While waiting, the learner can write tasks but not tick them, and no warning emails go out. `[ASSUMED A20 for writing tasks]`
    Done when: the chosen person's status stays "pending" until they click the confirm link; ticking is refused until then; if nobody confirms, the learner can name someone else; a new chosen person starts at "pending" again. `[ASSUMED A13]`
 
-R9 After any day with no task completed, the learner and their confirmed chosen person each get an email, sent at 8 AM the next morning in the learner's timezone. There are no rest days and no waiting period. `[ASSUMED A1 for the time]`
-   Done when: a day with no tick produces both emails the next morning; a day with one tick produces none.
-   Days checked run from the day after the goal starts through the deadline, and stop once every task is done. `[ASSUMED A11]`
+R9 After 48 hours with no task completed, the learner and their confirmed chosen person each get an email. The clock starts at the last tick, or at the goal's start if nothing has been ticked. There are no rest days. Each further 48 hours with no task completed sends another email. `[ASSUMED A22 for repeats]`
+   Done when: 47 hours without a tick sends nothing; 48 hours sends both emails; 96 hours sends both again; a tick restarts the clock.
+   The clock runs until the deadline, and stops once every task is done. `[ASSUMED A11]`
    If a chosen person stops emails or is replaced after the goal starts, only the learner gets the email until a new one confirms. `[ASSUMED A7, A13]`
 
 R10 Goal, progress, risk and next step all appear on one dashboard screen.
@@ -51,7 +51,7 @@ R13 A goal is completed when every task is ticked. The learner cannot end a star
 ## Must never do
 
 N1 Never email a chosen person about a learner before they have confirmed.
-   Done when: a pending chosen person receives only the confirmation email, even on a no-task day.
+   Done when: a pending chosen person receives only the confirmation email, whatever the learner does.
 
 N2 Never show one learner's goals or tasks to another learner.
    Done when: logged in as learner A, opening learner B's goal by its address is refused.
@@ -62,10 +62,10 @@ N3 Never present the risk level as a true prediction of passing or failing.
 N4 Never let a learner backdate a completed task to avoid an email. `[ASSUMED A5]`
    Done when: the app has no way to enter a completion date; it is always the day of the tick.
 
-N5 Never send the same person two no-task emails about the same goal and day.
-   Done when: running the daily check twice in a row sends each email once.
+N5 Never send the same person two warning emails about the same goal and the same 48-hour period.
+   Done when: running the hourly check twice in a row sends each email once.
 
-N6 Never tell the chosen person more than the learner's name, the goal's name, the missed day and the risk level. `[ASSUMED A6]`
+N6 Never tell the chosen person more than the learner's name, the goal's name, the time since the last completed task and the risk level. `[ASSUMED A6]`
    Done when: the email contains no task names and no other account details.
 
 N7 Never keep emailing a chosen person who has opted out. Every email to them has a stop link. `[ASSUMED A7]`
