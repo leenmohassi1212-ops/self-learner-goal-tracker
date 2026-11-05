@@ -40,6 +40,6 @@ For any model writing code in this repo. `[ASSUMED A12: naming, structure, comme
 - Never build anything in `screens.md`'s Not building line or `scope.md`'s out list.
 - Never add a paid service or a new library without asking.
 - Never bring back an idea killed in `decisions.md` without asking.
-- Never email a real person from a test.
+- Never email a real person from a test or the demo. Only addresses the project owner owns are allowed.
 - Never change a requirement silently. Propose it, and record the decision in `decisions.md`.
 - Never put a secret, password or real email address in the repo.

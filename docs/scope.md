@@ -13,6 +13,10 @@
 | 9 | Live hosting for the final night | In scope |
 | 10 | AI next step (Gemini, Groq backup) | Built last, cut first |
 
+**Cut order if time runs short**
+
+The AI next step goes first, then the learner's own next-step pick (R7), then task reordering (R3), then the missed-deadline email (R13). Password reset stays.
+
 **What's out**
 
 | # | What | Why |

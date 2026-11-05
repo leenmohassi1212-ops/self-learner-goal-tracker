@@ -35,7 +35,7 @@ Run the fresh-chat test after any big change, in a chat that has never seen the 
 
 ## If time runs out
 
-Cut the AI next step first (`scope.md`). If a document has to be drafted without the interview, tag every guess `[ASSUMED]` and list it in `decisions.md`, as happened on 2026-11-05.
+Follow the cut order in `scope.md`, starting with the AI next step. If a document has to be drafted without the interview, tag every guess `[ASSUMED]` and list it in `decisions.md`, as happened on 2026-11-05.
 
 ## Known weak spot
 

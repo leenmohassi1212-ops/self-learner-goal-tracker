@@ -1,16 +1,18 @@
 # Stack
 
-Decided: plain JavaScript and a small Node server, because it means fewer new things to learn. `[ASSUMED A10]` The specific services and libraries below are the model's picks to fit that decision and are not yet confirmed.
+Decided: plain JavaScript and a small Node server, because it means fewer new things to learn. `[ASSUMED A10]` The specific services below are the model's picks to fit that decision and are not yet confirmed. Rows marked Decided are settled.
 
 | Piece | Tool | Honest reason |
 |---|---|---|
 | Language | JavaScript | This is a JS mentorship track |
 | Pages | Plain HTML, CSS and JavaScript | Decided: nothing new to learn before building |
 | Server | Node with Express | Express is the small, common way to run a Node server, and it serves the pages too |
-| Login | Built by hand, with a standard password-hashing library | Decided: no framework or login service. See the risk in `architecture.md` |
+| Login | Built by hand on bcryptjs (password hashing), express-session and connect-pg-simple (sessions kept in the database) | Decided: no framework or login service, but password and session handling come from widely used code. bcryptjs needs no compiled install. See the risk in `architecture.md` |
+| Database client | pg | Decided: the common way for Node to talk to Postgres, which is what Supabase runs |
+| Testing | Node's built-in test runner | Decided: nothing to install |
 | Hosting | Render, free tier | Free, runs a Node server, deploys from GitHub |
 | Database | Supabase, free tier, as a database only | Free hosted database |
-| Email | Brevo, free tier | Can send from a verified single address with no purchased domain |
+| Email | Brevo, free tier, called through its web API with Node's built-in fetch | Can send from a verified single address with no purchased domain; no email library needed |
 | Scheduler | GitHub Actions, hourly | Free, and can run hourly |
 | AI next step | Gemini, Groq as backup | Decided in `scope.md`; both have free tiers |
 
@@ -34,5 +36,4 @@ Free limits change. `research.md` has what a quick search found, mostly from thi
 - **Biggest open risk:** does Brevo deliver to Gmail and Outlook from a single verified Gmail address without landing in spam? Test this first. If it fails, the warning emails, and so the whole consequence, fail with it.
 - Not checked yet: does GitHub Actions run close enough to on time? Scheduled runs can start late.
 - Not checked yet: are the Gemini and Groq free tiers still available?
-- Not checked yet: does Render's free tier block outgoing SMTP? If so, call Brevo through its web API.
 - Not checked yet: does GitHub switch off scheduled runs after about 60 days without repo activity? That is close to the eight-week project.
