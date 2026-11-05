@@ -25,6 +25,22 @@ The model filled these gaps. For each one: confirm it, change it, then remove it
 | A13 | Chosen person can be replaced, and the new one must confirm | R8 | A learner could swap away someone who was holding them to it |
 | A14 | Five screens | `screens.md` | Session Four designs exactly these |
 | A15 | AI gets goal, tasks and career note only; suggestions aren't saved | N9 | Privacy vs. suggestion quality |
+| A16 | A goal ends when all tasks are ticked or the learner ends it | R13 | A learner could end a goal to stop the emails |
+| A17 | Start date is the day the goal is created | R2 | A later start date would change planned progress |
+| A18 | Adding or deleting tasks recalculates the plan | R3 | A learner could delete tasks to hide their delay |
+| A19 | Name asked at sign-up; timezone read from the browser | S1 | Travel would shift the 8 AM email |
+
+## 2026-11-05: found by a rehearsal of the fresh-chat test
+
+A model with no project context read the folder and caught these errors in the first drafts. All were fixed.
+
+- Email retries contradicted "only at 8 AM". Now the check handles anyone whose 8 AM has passed and has no email record.
+- The chosen person's email wasn't allowed to say who slipped. The learner's name is now allowed (N6).
+- Duplicate checking ignored the goal, so someone chosen by two learners would miss an email. It now matches on goal too (N5).
+- No requirement ended a goal, the start date was never collected, and neither were timezone or names. Added as A16, A17 and A19.
+- Deleting tasks could erase delay. Recorded as A18, not solved.
+
+Still open: `brief.md` says the app "turns a goal into daily tasks", then says the learner breaks it down. The requirements follow the second reading: the learner does it.
 
 ## Before 2026-11-05: chosen (from `brief.md` and `scope.md`)
 

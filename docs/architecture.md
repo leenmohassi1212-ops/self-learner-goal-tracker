@@ -16,13 +16,13 @@
 | Web app | Log in, check ownership, save goals and tasks, calculate progress and risk | Show data to anyone but its owner (N2); send email except through the daily check or confirmation flow |
 | Database | Keep the things in `data-model.md` | Be reachable without the web app's checks |
 | Scheduler | Wake the daily check once an hour | Contain any logic of its own |
-| Daily check | Find learners whose 8 AM has arrived, find no-task days, send emails, write email records | Email a pending or stopped chosen person (N1, N7); send twice for one day (N5) |
+| Daily check | Find learners whose 8 AM has passed, find no-task days with no email record yet, send emails, write email records | Email a pending or stopped chosen person (N1, N7); send twice for one day (N5) |
 | Email service | Deliver what it is handed | Decide who gets what |
 | AI service | Suggest a next step | Be required: the dashboard must work with it down (R12); receive names or emails (N9) |
 
 ## Why the check runs hourly
 
-Learners live in different timezones, so "8 AM" arrives at different moments. `[ASSUMED A1]` The check runs every hour and only handles learners for whom it is now 8 AM. This is why N5 needs an email record: a repeated or late run must not send again.
+Learners live in different timezones, so "8 AM" arrives at different moments. `[ASSUMED A1]` The check runs every hour and handles every learner whose 8 AM has passed and whose no-task day has no email record yet. A late run still sends, a failed email is retried on the next run, and the record stops anything going out twice (N5).
 
 ## What will be hard
 

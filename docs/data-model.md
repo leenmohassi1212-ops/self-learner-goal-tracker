@@ -17,7 +17,7 @@ Name, email, status (pending, confirmed, or stopped), private link value for the
 ## Email record
 Recipient (learner or chosen person), goal, the day it is about, the time it was sent.
 
-This exists to enforce N5. Before sending, the daily check looks for a record with the same recipient and day.
+This exists to enforce N5. Before sending, the daily check looks for a record with the same recipient, goal and day. Someone chosen by two learners still gets both emails.
 
 ## How they relate
 

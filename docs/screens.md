@@ -2,9 +2,9 @@
 
 Five screens. `[ASSUMED A14: the count and the split are the model's draft]`
 
-S1 Sign up / log in: a learner gets into their account. Serves R1, N8.
+S1 Sign up / log in: a learner gets into their account. Asks for their name; their timezone is read from the browser. `[ASSUMED A19]` Serves R1, N8.
 
-S2 Goal: set the target, type, deadline, career note and chosen person's email. Also where the learner replaces a chosen person. Serves R2, R8.
+S2 Goal: set the target, type, deadline, career note, and chosen person's name and email. Also where the learner replaces a chosen person or ends the goal. Serves R2, R8, R13.
 
 S3 Tasks: add, edit, delete and reorder the goal's tasks. Serves R3.
 

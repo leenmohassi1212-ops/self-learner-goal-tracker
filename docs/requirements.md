@@ -8,9 +8,11 @@ R1 A learner can sign up and log in with an email and password. `[ASSUMED A9]`
    Done when: a new learner can sign up, log out, and log back in to the same goal; a wrong password is refused.
 
 R2 A learner can set one active goal: a target, a type (exam or self-set), and a deadline. `[ASSUMED A2]`
+   The start date is the day the goal is created. `[ASSUMED A17]`
    Done when: "AWS exam on a set date" and "finish a React course in four weeks" can both be saved; a second active goal is refused.
 
 R3 A learner can break the goal into small ordered tasks, such as a lesson or a chapter.
+   Adding or deleting a task recalculates the plan from the new total, so deleting tasks can shrink the delay. `[ASSUMED A18]`
    Done when: tasks can be added, edited, deleted and reordered, and the order is still there after logging back in.
 
 R4 A learner can mark a task done, self-reported.
@@ -43,6 +45,9 @@ R11 The app is hosted live for the final night.
 R12 (Built last, cut first.) The dashboard can show an AI next-step suggestion based on the learner's goal and career plans, using Gemini with Groq as backup.
     Done when: a suggestion appears; if Gemini fails Groq is tried; if both fail, the next unticked task still shows and nothing breaks.
 
+R13 A goal is completed when every task is ticked, and the learner can end it at any time. A passed deadline alone does not end it. `[ASSUMED A16]`
+    Done when: after a goal is completed or ended, a new goal can be created and no more emails are sent about the old one.
+
 ## Must never do
 
 N1 Never email a chosen person about a learner before they have confirmed.
@@ -57,10 +62,10 @@ N3 Never present the risk level as a true prediction of passing or failing.
 N4 Never let a learner backdate a completed task to avoid an email. `[ASSUMED A5]`
    Done when: the app has no way to enter a completion date; it is always the day of the tick.
 
-N5 Never send the same person two no-task emails about the same day.
+N5 Never send the same person two no-task emails about the same goal and day.
    Done when: running the daily check twice in a row sends each email once.
 
-N6 Never tell the chosen person more than the goal's name, the missed day and the risk level. `[ASSUMED A6]`
+N6 Never tell the chosen person more than the learner's name, the goal's name, the missed day and the risk level. `[ASSUMED A6]`
    Done when: the email contains no task names and no other account details.
 
 N7 Never keep emailing a chosen person who has opted out. Every email to them has a stop link. `[ASSUMED A7]`
