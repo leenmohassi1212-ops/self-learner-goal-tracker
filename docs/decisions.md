@@ -1,5 +1,13 @@
 # Decisions
 
+## 2026-11-12: Task 04 — four states per screen, and the backlog
+
+- **All four states (empty, loading, error, full) are written into `design.md` in words** for every screen, as Task 04 requires. Loading and error share two patterns instead of five inventions. Mockups of both exist, but the words are the documentation.
+- **Decided by the design, now on purpose:** a dashboard with no goal is the empty state and points to S2; waiting, completed, ended and person-stopped are states of the dashboard, not pages (so `screens.md`'s five-screen count and A14 hold); every whole-screen wait names the free server waking up (Render sleeps, `stack.md`); every error is a plain sentence with a way to try again (`rules.md`).
+- **Rejected:** a resend-confirmation button on the waiting state — "choose someone else" already covers a dead request (R8), and resending adds a nagging channel nobody asked for; a separate error page — error is a state of each screen; and the model-typical extras (search, filters, settings page, avatar uploads), which are in nobody's requirements.
+- **The design forced no new fields.** Every element on every state was checked against `data-model.md`: all stored or computed. The check is noted in `data-model.md`.
+- **The backlog is cut: 14 tickets in `docs/tickets/`,** each with a why, a done-when and what it touches; order and the first three (01 skeleton, 02 tables, 03 sign-in) in `docs/tickets/README.md`. The cut order matches `scope.md`; 14 tickets over three build weeks is four to five a week — accepted as tight but honest.
+
 ## 2026-11-12: screens designed early, in Figma
 
 The five screens were designed in Figma before the Brevo test and the interviews, out of Session Four's order, because the owner asked for the design now. The file also covers the states the requirements demand — waiting, completed, ended, person stopped, empty tasks, and the chosen person's confirm and stop results — as states of the five screens, not new ones, so A14 still holds. A second pass restyled everything onto design tokens: one violet accent, semantic green/amber/red only for risk and the 48-hour clock, WCAG AA contrast, light and dark. Tokens and rules live in `design.md`; images in `docs/design/`. The accepted cost is that the email test or the interviews may force a redesign, so the screens stay a draft until both happen.

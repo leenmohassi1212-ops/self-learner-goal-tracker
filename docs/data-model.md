@@ -29,6 +29,10 @@ Kept in the database by the session library (`stack.md`), so a learner stays log
 - A goal has at most one current chosen person. Replacing them starts a new pending one. After the goal starts, only someone who stopped can be replaced.
 - A goal has many email records.
 
+## Checked against the design (2026-11-12)
+
+Task 04's design was built only from the fields above. Every element on every screen and state in `design.md` is either stored here or calculated from it (days left, planned progress, delay, risk level, hours since the last tick). The design forced no new field.
+
 ## Deliberately not stored
 
 - Risk level, delay, and planned progress. They are calculated from the deadline, start time and tasks each time, so they can't go out of date.

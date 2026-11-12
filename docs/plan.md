@@ -10,7 +10,8 @@ A web app for self-learners who keep postponing a market skill such as an AWS ce
                  architecture.md   the pieces, and what will be hard
                  stack.md          what we build with
                  rules.md          how code is written
-                 design.md         the look: tokens, type and the Figma screens
+                 design.md         every screen, every state, and the tokens
+                 tickets/          the backlog: 14 tickets, their order, the first three
     Living       decisions.md      what was chosen, killed and assumed
                  progress.md       where things stand; paste this first in a new chat
                  workflow.md       how we work with the model
