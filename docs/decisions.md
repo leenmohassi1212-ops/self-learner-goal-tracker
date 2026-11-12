@@ -1,5 +1,9 @@
 # Decisions
 
+## 2026-11-12: screens designed early, in Figma
+
+The five screens were designed in Figma before the Brevo test and the interviews, out of Session Four's order, because the owner asked for the design now. The file also covers the states the requirements demand — waiting, completed, ended, person stopped, empty tasks, and the chosen person's confirm and stop results — as states of the five screens, not new ones, so A14 still holds. A second pass restyled everything onto design tokens: one violet accent, semantic green/amber/red only for risk and the 48-hour clock, WCAG AA contrast, light and dark. Tokens and rules live in `design.md`; images in `docs/design/`. The accepted cost is that the email test or the interviews may force a redesign, so the screens stay a draft until both happen.
+
 ## 2026-11-05: how this folder was written
 
 The interview was cut short. The task was due in 40 minutes, so the model asked two questions, then drafted from `brief.md`, `scope.md` and `promot-log.md` instead of interviewing for each file. Because of that, many lines below are the model's assumptions and are listed for review.
