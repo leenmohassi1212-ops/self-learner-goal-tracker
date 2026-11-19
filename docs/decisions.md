@@ -8,6 +8,10 @@
 - **The design forced no new fields.** Every element on every state was checked against `data-model.md`: all stored or computed. The check is noted in `data-model.md`.
 - **The backlog is cut: 14 tickets in `docs/tickets/`,** each with a why, a done-when and what it touches; order and the first three (01 skeleton, 02 tables, 03 sign-in) in `docs/tickets/README.md`. The cut order matches `scope.md`; 14 tickets over three build weeks is four to five a week — accepted as tight but honest.
 
+## 2026-11-19: UI v2 — new colors, new font, error screen, fewer notes
+
+The owner asked for a more professional look. The screens were redone on a design canvas (link in `design.md`): navy ink plus one blue accent instead of violet, Plus Jakarta Sans instead of the system font, a dedicated error screen, completed tasks moved to the bottom of the task list, and the minor footnotes removed (each listed in `design.md`). No rule changed: every removed note was either repeated elsewhere or describes something the server enforces anyway, and the "estimate" label still sits beside every risk level (N3). Plus Jakarta Sans loads from Google Fonts, which is free (N10). Still a draft until the Brevo test and the interviews.
+
 ## 2026-11-12: screens designed early, in Figma
 
 The five screens were designed in Figma before the Brevo test and the interviews, out of Session Four's order, because the owner asked for the design now. The file also covers the states the requirements demand — waiting, completed, ended, person stopped, empty tasks, and the chosen person's confirm and stop results — as states of the five screens, not new ones, so A14 still holds. A second pass restyled everything onto design tokens: one violet accent, semantic green/amber/red only for risk and the 48-hour clock, WCAG AA contrast, light and dark. Tokens and rules live in `design.md`; images in `docs/design/`. The accepted cost is that the email test or the interviews may force a redesign, so the screens stay a draft until both happen.
